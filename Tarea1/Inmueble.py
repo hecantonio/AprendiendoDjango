@@ -41,7 +41,7 @@ class Inmueble:
         return self.color
 
     def pagarArriendo(self):
-        print("Pagando arriendo: " + str(self.costo))
+        print("\n >> Pagando arriendo: " + str(self.costo))
 
     def pintar(self):
-        print("Pintar de color: " + self.color)
+        print("\n >> Pintar de color: " + self.color)

@@ -25,11 +25,12 @@ class Casa(Inmueble):
     #Metodos
     
     def getInfo(self):
-        info = "----------------Información Casa---------------"
+        info = "\n\n----------------Información Casa---------------"
         info += "\n Dirección: " + self.getDireccion()
         info += "\n Superficie: " + self.getSuperficie()
         info += "\n Garage: " + self.getGarage()
         info += "\n Costo: " + str(self.getCosto())
+        info += "\n Color: " + str(self.getColor())
         info += "\n Urbanización: " + self.getUrbanizacion()
         info += "\n Patio: " + self.getPatio()
 

@@ -24,12 +24,16 @@ class Edificio(Inmueble):
 
     #Metodos
 
+    def seleccionarPiso(self, piso):
+        print("\n >> Piso seleccionado: " + str(piso))
+
     def getInfo(self):
-        info = "----------------Información Edificio---------------"
+        info = "\n\n----------------Información Edificio---------------"
         info += "\n Dirección: " + self.getDireccion()
         info += "\n Superficie: " + self.getSuperficie()
         info += "\n Garage: " + self.getGarage()
         info += "\n Costo: " + str(self.getCosto())
+        info += "\n Color: " + str(self.getColor())
         info += "\n Pisos: " + str(self.getPisos())
         info += "\n Ascensor: " + self.getAscensor()
 
