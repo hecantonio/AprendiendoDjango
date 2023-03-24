@@ -2,18 +2,18 @@ from Inmueble import Inmueble
 
 class Casa(Inmueble):
 
-    def __init__(self, direccion, superficie, garage, costo, color, urbanizacion, patio):
-        super().__init__(direccion, superficie, garage, costo, color)
-        self.urbanizacion = urbanizacion
+    def __init__(self, direccion, superficie, costo, cantDormitorios, patio):
+        super().__init__(direccion, superficie, costo)
+        self.cantDormitorios = cantDormitorios
         self.patio = patio
 
     #getters y setters
 
-    def setUrbanizacion(self, urbanizacion):
-        self.urbanizacion = urbanizacion
+    def setCantDormitorios(self, cantDormitorios):
+        self.cantDormitorios = cantDormitorios
     
-    def getUrbanizacion(self):
-        return self.urbanizacion
+    def getCantDormitorios(self):
+        return self.cantDormitorios
 
     def setPatio(self, patio):
         self.patio = patio
@@ -31,10 +31,8 @@ class Casa(Inmueble):
         info = "\n\n----------------Información Casa---------------"
         info += "\n Dirección: " + self.getDireccion()
         info += "\n Superficie: " + self.getSuperficie()
-        info += "\n Garage: " + self.getGarage()
         info += "\n Costo: " + str(self.getCosto())
-        info += "\n Color: " + str(self.getColor())
-        info += "\n Urbanización: " + self.getUrbanizacion()
+        info += "\n Cantidad dormitorios: " + str(self.getCantDormitorios())
         info += "\n Patio: " + self.getPatio()
 
         return info

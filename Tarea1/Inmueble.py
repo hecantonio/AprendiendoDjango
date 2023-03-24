@@ -1,11 +1,9 @@
 class Inmueble:
 
-    def __init__(self, direccion, superficie, garage, costo, color):
+    def __init__(self, direccion, superficie, costo):
         self.direccion = direccion
         self.superficie = superficie
-        self.garage = garage
         self.costo = costo
-        self.color = color
 
     #getters y setters
 
@@ -22,26 +20,14 @@ class Inmueble:
     def getSuperficie(self):
         return self.superficie
     
-    def setGarage(self, garage):
-        self.garage = garage
-    
-    def getGarage(self):
-        return self.garage
-
     def setCosto(self, costo):
         self.costo = costo
     
     def getCosto(self):
         return self.costo
     
-    def setColor(self, color):
-        self.color = color
-    
-    def getColor(self):
-        return self.color
-
     def pagarArriendo(self):
         print("\n >> Pagando arriendo: " + str(self.costo))
 
-    def pintar(self):
-        print("\n >> Pintar de color: " + self.color)
+    def vender(self):
+        print("\n >> Vendida por el precio de : " + str(self.costo))
