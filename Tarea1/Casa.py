@@ -24,7 +24,7 @@ class Casa(Inmueble):
 
     #Metodos
 
-    def limpieza():
+    def limpieza(self):
         print("\n >> Limpieza de casa...")
     
     def getInfo(self):
